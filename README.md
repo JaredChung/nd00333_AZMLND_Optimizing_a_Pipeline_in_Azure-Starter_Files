@@ -48,11 +48,11 @@ In saying this, Hyperdrive was quicker to train than AUTOML.
 **What are some areas of improvement for future experiments? Why might these improvements help the model?**
 Some areas of improvement for future experiments can be:
 
-* Expand AUTOML experiment longer
-* Try different combinations of hyperparameters and train for longer iterrations
-* Add additional data e.g features
-* Explore feature engineering
-* Acquire more data
+* Expand AUTOML experiment longer, as within the configuration of the experiment it timeouted at 30 mins. This could be increased to 1-2 hours potentially. The benefit of doing this would be to have more models produced and thus the potential to have model out perform the current best run.
+* Try different combinations of hyperparameters and train for longer iterrations. The hyperparameter model best results was at 100 which is the boundary of the experiment. This means that the model could still gain performance by increasing this parameter. Increasing it to say 500 may result in better performance.
+* Add additional data e.g features. This will provide more information for the model to learn from. Some features to consider would be transactional data from the bank which more determine certain characteristics such as income or how much savings they have whhich would potentially be predictive variables of someone who would consider getting a Term Deposit.
+* Explore feature engineering this may involve working with banking subject matter experts to outline potential segments they have an understanding of (e.g Baby Boomers, young professionals) This features can be built off the current ones. This may be additional information the model may learn from and thus perform better.
+* Acquire more data is usually a good way to get additional performance. This is due to Machine Learning / Deep Learning models have more examples to learn from and thus generalise better
 
 
 
