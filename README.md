@@ -6,18 +6,18 @@ In this project, we build and optimize an Azure ML pipeline using the Python SDK
 This model is then compared to an Azure AutoML run.
 
 ## Summary
-The dataset contains data about bankmarketing and we seek to predict if the customer subscribes to a fixed term deposit.
+The dataset contains data about bankmarketing and we seek to predict if the customer subscribes to a fixed term deposit. The features that are used in this model customer related information such as (Age, Education, Martial Status etc). This plays an important part because certain demographics are more receptible to the marketing campaign as banking related products are based on the life stages of an individual
 
 The best performing model scored 91.12%
 * Regulisation rate 4
 * Number of iterrations 100
 
 ## Scikit-learn Pipeline
-There were multiple steps involved which started off loading Data from the web and they cleaning the data and then breaking up the data into X and Y. Then the data needed to be cleaned. After this the data was broken into train and test. Hyperparameter tuning was then processed to find the best model. The best model was then selected and saved.
+There were multiple steps involved which started off loading Data from the web, then cleaning the data, breaking the data up the data into X and Y. After this the data was then cleaned. next it needed to be broken into train and test. Hyperparameter tuning was then processed to find the best model. The best model was then selected and saved.
 
 The decided to choose a Random sampling method was used which was based defined range using "choice" so I would understand the predefined parameters and would train for shorter period. The benefit of using this method is because it supports early termination of low-performance runs.
 
-The BanditPolicy was used as the early stopping policy which takes into account the slack factor and evaluation_interval. 
+The BanditPolicy was used as the early stopping policy which takes into account the slack factor and evaluation_interval. Bandit is an early termination policy.The policy early terminates any runs where the primary metric is not within the specified slack factor/slack amount with respect to the best performing training run.
 
 ## AutoML
 After the AutoML was run, prefittedsoftvotingclassifier model was the best run and it produced an accuracy of 91.7%. 
