@@ -15,7 +15,7 @@ The best performing model scored 91.12%
 ## Scikit-learn Pipeline
 There were multiple steps involved which started off loading Data from the web, then cleaning the data, breaking the data up the data into X and Y. After this the data was then cleaned. next it needed to be broken into train and test. Hyperparameter tuning was then processed to find the best model. The best model was then selected and saved.
 
-The decided to choose a Random sampling method was used which was based defined range using "choice" so I would understand the predefined parameters and would train for shorter period. The benefit of using this method is because it supports early termination of low-performance runs.
+Random sampling method was used which was based defined range using "choice" so I would understand the predefined parameters and would train for shorter period. The benefit of using this method is because it supports early termination of low-performance runs.
 
 The BanditPolicy was used as the early stopping policy which takes into account the slack factor and evaluation_interval. Bandit is an early termination policy.The policy early terminates any runs where the primary metric is not within the specified slack factor/slack amount with respect to the best performing training run.
 
